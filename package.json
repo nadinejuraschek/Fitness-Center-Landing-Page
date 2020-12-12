@@ -1,0 +1,22 @@
+{
+  "name": "vereinshomepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadinejuraschek/Vereinshomepage.git"
+  },
+  "author": "Nadine Juraschek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nadinejuraschek/Vereinshomepage/issues"
+  },
+  "homepage": "https://github.com/nadinejuraschek/Vereinshomepage#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
