@@ -3,7 +3,7 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   font-size: 1.5rem;
-  height: 35rem;
+  height: 33rem;
   padding: 2.5rem;
   text-align: center;
   transition: transform 0.3s;
@@ -13,10 +13,9 @@
   }
 
   &__icon {
-    background-color: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    color: transparent;
-    font-size: 6rem;
     margin-bottom: 5px;
-    -webkit-background-clip: text;
+
+    height: 6rem;
+    width: 6rem;
   }
 }
