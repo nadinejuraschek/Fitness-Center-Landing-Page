@@ -513,11 +513,9 @@ body {
     height: auto;
     width: 15rem; }
   .footer__logo-name {
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
-    color: transparent;
+    color: #eeeeee;
     font-size: 2.5rem;
-    text-transform: uppercase;
-    -webkit-background-clip: text; }
+    text-transform: uppercase; }
   .footer__nav, .footer__copyright {
     border-top: 1px solid #777777;
     display: inline-block;
