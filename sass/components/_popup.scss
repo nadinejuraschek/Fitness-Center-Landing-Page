@@ -1,5 +1,9 @@
 .popup {
-  background-color: rgba($color-black, 0.8);
+  background-color: rgba($color-black, 0.7);
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.3s;
 
   position: fixed;
   top: 0;
@@ -13,16 +17,31 @@
   width: 100vw;
   z-index: 100;
 
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
   &__content {
     background-color: $color-white;
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    opacity: 0;
     overflow: hidden;
+    transform: scale(0.5);
+    transition: all 0.4s 0.2s;
     width: 75%;
+
+    position: relative;
 
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  &:target &__content {
+    opacity: 1;
+    transform: scale(1);
   }
 
   &__left {
@@ -57,5 +76,26 @@
     -moz-hypens: auto;
     -ms-hypens: auto;
     -webkit-hypens: auto;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-dark-1;
+      font-size: 3rem;
+      text-decoration: none;
+      transition: all 0.2s;
+
+      display: inline-block;
+
+      position: absolute;
+      top: 1.5rem;
+      right: 2.75rem;
+    }
+
+    &:hover {
+      color: $color-primary;
+      cursor: pointer;
+    }
   }
 }

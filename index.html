@@ -60,7 +60,7 @@
         <span class="heading-primary--main">SV Beispiel</span>
         <span class="heading-primary--sub">Sport mit Herz</span>
       </h1>
-      <a href="#" class="btn btn--white btn--animated">
+      <a href="#section-courses" class="btn btn--white btn--animated">
         Entdecke unsere Kurse
       </a>
     </div>
@@ -157,7 +157,7 @@
       </div>
     </section>
 
-    <section class="section-courses">
+    <section class="section-courses" id="section-courses">
       <div class="u-center-text u-mb-lg">
         <h2 class="heading-secondary">
           Aktuelle Kursangebote
@@ -190,7 +190,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">12€</p>
                 </div>
-                <a href="#" class="btn btn--white">Enroll now!</a>
+                <a href="#popup" class="btn btn--white">Enroll now!</a>
               </div>
             </div>
           </div>
@@ -221,7 +221,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">12€</p>
                 </div>
-                <a href="#" class="btn btn--white">Enroll now!</a>
+                <a href="#popup" class="btn btn--white">Enroll now!</a>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">12€</p>
                 </div>
-                <a href="#" class="btn btn--white">Enroll now!</a>
+                <a href="#popup" class="btn btn--white">Enroll now!</a>
               </div>
             </div>
           </div>
@@ -401,13 +401,14 @@
       </div>
     </footer>
 
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
           <img class="popup__img" src="img/10.jpg" alt="Course Preview" />
           <img class="popup__img" src="img/11.jpg" alt="Course Preview" />
         </div>
         <div class="popup__right">
+          <a href="#section-courses" class="popup__close">&times;</a>
           <h2 class="heading-secondary u-mb-md">Enroll Now</h2>
           <h3 class="heading-tertiary u-mb-sm">
             Important &ndash; Please read these terms before enrolling!
