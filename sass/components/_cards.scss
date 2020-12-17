@@ -59,19 +59,37 @@
 
     &--1 {
       background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
-      url(../img/03.jpg);
+      url(../img/03.png);
+
+      @media (min-resolution: 192dpi) and (min-width: 1200px) {
+        background-image:
+        linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+        url(../img/03-lg.png);
+      }
     }
 
     &--2 {
       background-image:
       linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-      url(../img/08.jpg);
+      url(../img/08.png);
+
+      @media (min-resolution: 192dpi) and (min-width: 1200px) {
+        background-image:
+        linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+        url(../img/08-lg.png);
+      }
     }
 
     &--3 {
       background-image:
       linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
-      url(../img/09.jpg);
+      url(../img/09.png);
+
+      @media (min-resolution: 192dpi) and (min-width: 1200px) {
+        background-image:
+        linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+        url(../img/09-lg.png);
+      }
     }
   }
 

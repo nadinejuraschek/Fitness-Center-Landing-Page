@@ -63,7 +63,7 @@ body {
     animation-timing-function: ease-out; }
 
 .heading-secondary {
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #ff9966, #ff5e62);
   color: transparent;
   display: inline-block;
   font-size: 3.5rem;
@@ -161,18 +161,18 @@ body {
     background-color: #ffffff; }
 
 .btn--green {
-  background-color: #55c57a;
+  background-color: #ED7A65;
   color: #ffffff; }
   .btn--green::after {
-    background-color: #55c57a; }
+    background-color: #ED7A65; }
 
 .btn--animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  border-bottom: 1px solid #55c57a;
-  color: #55c57a;
+  border-bottom: 1px solid #ED7A65;
+  color: #ED7A65;
   display: inline-block;
   font-size: 1.6rem;
   padding: 3px;
@@ -180,7 +180,7 @@ body {
   transition: all .2s; }
 
 .btn-text:hover {
-  color: #7ed56f;
+  color: #ff9966;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -210,9 +210,9 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-      .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #ff9966, #ff5e62); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
@@ -226,11 +226,20 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__img--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/03.jpg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/03.png); }
+      @media (min-resolution: 192dpi) and (min-width: 1200px) {
+        .card__img--1 {
+          background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/03-lg.png); } }
     .card__img--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/08.jpg); }
+      background-image: linear-gradient(to right bottom, #ff9966, #ff5e62), url(../img/08.png); }
+      @media (min-resolution: 192dpi) and (min-width: 1200px) {
+        .card__img--2 {
+          background-image: linear-gradient(to right bottom, #ff9966, #ff5e62), url(../img/08-lg.png); } }
     .card__img--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/09.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/09.png); }
+      @media (min-resolution: 192dpi) and (min-width: 1200px) {
+        .card__img--3 {
+          background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/09-lg.png); } }
   .card__heading {
     color: #ffffff;
     font-size: 2.8rem;
@@ -246,9 +255,9 @@ body {
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
-    .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(255, 153, 102, 0.85), rgba(255, 94, 98, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
@@ -301,7 +310,7 @@ body {
       top: 10rem; }
     .composition__img:hover {
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      outline: 1rem solid #55c57a;
+      outline: 1rem solid #ED7A65;
       outline-offset: 5px;
       transform: scale(1.05);
       z-index: 3; }
@@ -341,10 +350,10 @@ body {
   width: 90%; }
   .form__input:focus {
     outline: none;
-    border-bottom: 3px solid #55c57a;
+    border-bottom: 3px solid #ED7A65;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
   .form__input:focus:invalid {
-    border-bottom: 3px solid #ff7730; }
+    border-bottom: 3px solid #28b485; }
   .form__input::placeholder, .form__input::-webkit-input-placeholder {
     color: #999999; }
 
@@ -380,7 +389,7 @@ body {
   padding-left: 4.5rem; }
 
 .form__radio-btn {
-  border: 4px solid #55c57a;
+  border: 4px solid #ED7A65;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -389,7 +398,7 @@ body {
   height: 3rem;
   width: 3rem; }
   .form__radio-btn::after {
-    background-color: #55c57a;
+    background-color: #ED7A65;
     border-radius: 50%;
     content: "";
     display: block;
@@ -470,7 +479,7 @@ body {
     top: 1.5rem;
     right: 2.75rem; }
   .popup__close:hover {
-    color: #55c57a;
+    color: #ED7A65;
     cursor: pointer; }
 
 .story {
@@ -543,13 +552,16 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/01.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 153, 102, 0.8), rgba(255, 94, 98, 0.8)), url(../img/01.png);
   background-size: cover;
   background-position: bottom;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   height: 95vh;
   position: relative; }
+  @media (min-resolution: 192dpi) and (min-width: 1200px) {
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(255, 153, 102, 0.8), rgba(255, 94, 98, 0.8)), url(../img/01-lg.png); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -600,7 +612,7 @@ body {
     text-transform: uppercase; }
   .footer__link:hover, .footer__link:active {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    color: #55c57a; }
+    color: #ED7A65; }
   .footer__copyright {
     color: #eeeeee;
     float: right;
@@ -626,7 +638,7 @@ body {
   z-index: 52; }
 
 .nav__background {
-  background-image: radial-gradient(#7ed56f, #28b485);
+  background-image: radial-gradient(#ff9966, #ff5e62);
   border-radius: 50%;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   position: fixed;
@@ -675,7 +687,7 @@ body {
 
 .nav__link:hover, .nav__link:active {
   background-position: 100%;
-  color: #55c57a;
+  color: #ED7A65;
   transform: translateX(1rem); }
 
 .nav__checkbox:checked ~ .nav__background {
@@ -725,14 +737,17 @@ body {
   padding: 25rem 0; }
 
 .section-features {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/02.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 153, 102, 0.8), rgba(255, 94, 98, 0.8)), url(../img/02.png);
   background-size: cover;
-  background-position: bottom;
+  background-position: center 70%;
   margin-top: -10rem;
   padding: 20rem 0;
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+  @media (min-resolution: 192dpi) and (min-width: 1200px) {
+    .section-features {
+      background-image: linear-gradient(to right bottom, rgba(255, 153, 102, 0.8), rgba(255, 94, 98, 0.8)), url(../img/02-lg.png); } }
 
 .section-courses {
   background-color: #f7f7f7;
@@ -745,14 +760,17 @@ body {
   position: relative; }
 
 .section-booking {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  background-image: linear-gradient(to right bottom, #ff9966, #ff5e62);
   padding: 15rem 0; }
 
 .booking-card {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/06.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/06.png);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media (min-resolution: 192dpi) and (min-width: 1200px) {
+    .booking-card {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/06-lg.png); } }
   .booking-card__form {
     padding: 6rem;
     width: 50%; }
