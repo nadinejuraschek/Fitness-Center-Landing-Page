@@ -47,6 +47,10 @@
   &__left {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
 
   &__right {
@@ -60,6 +64,9 @@
 
   &__img {
     display: block;
+
+    object-fit: cover;
+    height: 100%;
     width: 100%;
   }
 

@@ -548,7 +548,10 @@ body {
     transform: scale(1); }
   .popup__left {
     grid-column: 1 / 2;
-    grid-row: 1 / -1; }
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr); }
   .popup__right {
     grid-column: 2 / 3;
     grid-row: 1 / -1;
@@ -556,6 +559,8 @@ body {
     padding: 4rem; }
   .popup__img {
     display: block;
+    object-fit: cover;
+    height: 100%;
     width: 100%; }
   .popup__text {
     font-size: 1.4rem;
