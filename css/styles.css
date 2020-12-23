@@ -47,6 +47,9 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: 'Lato', 'Helvetica Neue', sans-serif;
@@ -66,6 +69,10 @@ body {
     letter-spacing: 1.5rem;
     animation: moveInLeft 3s;
     animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 5rem;
+        letter-spacing: 1rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -73,6 +80,9 @@ body {
     letter-spacing: 2.45rem;
     animation: moveInRight 3s;
     animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: 0.5rem; } }
 
 .heading-secondary {
   background-image: linear-gradient(to right, #ff9966, #ff5e62);
@@ -83,6 +93,12 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-background-clip: text; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
 
 .heading-tertiary {
   font-size: 1.6rem;

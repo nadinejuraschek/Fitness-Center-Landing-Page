@@ -20,6 +20,11 @@ body {
 
     animation: moveInLeft 3s;
     animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      font-size: 5rem;
+      letter-spacing: 1rem;
+    }
   }
 
   &--sub {
@@ -30,6 +35,10 @@ body {
 
     animation: moveInRight 3s;
     animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -42,6 +51,14 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-background-clip: text;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
 
 .heading-tertiary {
