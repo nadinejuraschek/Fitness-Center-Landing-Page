@@ -495,10 +495,10 @@ body {
     float: left;
     position: relative;
     transform: skewX(7deg) translateX(-3rem);
-    clip-path: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
     height: 15rem;
     width: 15rem; }
   .story__img {

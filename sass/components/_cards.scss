@@ -6,6 +6,7 @@
   position: relative;
 
   &__side {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
@@ -61,7 +62,8 @@
       background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
       url(../img/03.png);
 
-      @media (min-resolution: 192dpi) and (min-width: 1200px) {
+      @media (min-resolution: 192dpi) and (min-width: 1200px),
+      (-webkit-min-device-pixel-ratio: 192dpi) and (min-width: 1200px) {
         background-image:
         linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
         url(../img/03-lg.png);
@@ -73,7 +75,8 @@
       linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
       url(../img/08.png);
 
-      @media (min-resolution: 192dpi) and (min-width: 1200px) {
+      @media (min-resolution: 192dpi) and (min-width: 1200px),
+      (-webkit-min-device-pixel-ratio: 192dpi) and (min-width: 1200px) {
         background-image:
         linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
         url(../img/08-lg.png);
@@ -85,7 +88,8 @@
       linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
       url(../img/09.png);
 
-      @media (min-resolution: 192dpi) and (min-width: 1200px) {
+      @media (min-resolution: 192dpi) and (min-width: 1200px),
+      (-webkit-min-device-pixel-ratio: 192dpi) and (min-width: 1200px) {
         background-image:
         linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
         url(../img/09-lg.png);
@@ -185,6 +189,7 @@
 
       &--back {
           transform: rotateY(0);
+          -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
       }
     }

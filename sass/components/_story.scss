@@ -12,18 +12,21 @@
   &__shape {
     float: left;
     position: relative;
+    overflow: hidden;
     transform: skewX(7deg) translateX(-3rem);
-
-    clip-path: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-shape-outside: circle(50% at 50% 50%);
 
     height: 15rem;
     width: 15rem;
 
     @include respond(phone) {
       transform: translateX(-3rem) skewX(0);
+    }
+
+    @supports (-webkit-clip-path: circle(50% at 50% 50%)) or (clip-path: circle(50% at 50% 50%)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
     }
   }
 
@@ -46,6 +49,7 @@
   }
 
   &__caption {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     color: $color-white;
     font-size: 1.7rem;
