@@ -16,6 +16,10 @@
     gap: 5px;
 
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__logo {
@@ -27,12 +31,6 @@
     color: $color-grey-light-2;
     font-size: 2.5rem;
     text-transform: uppercase;
-  }
-
-  &__nav {
-    @include respond(tab-port) {
-      text-align: center;
-    }
   }
 
   &__nav,
@@ -54,6 +52,10 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
   }
 
   &__link {

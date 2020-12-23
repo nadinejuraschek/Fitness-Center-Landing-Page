@@ -21,6 +21,10 @@
 
     height: 15rem;
     width: 15rem;
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
   }
 
   &__img {
@@ -35,6 +39,10 @@
 
   &__text {
     transform: skewX(7deg);
+
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 
   &__caption {
@@ -54,5 +62,14 @@
   &:hover &__caption {
     opacity: 1;
     transform: translate(-50%, -50%);
+  }
+
+  @include respond(tab-port) {
+    padding: 4rem 4rem 4rem 7rem;
+    width: 100%;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
   }
 }

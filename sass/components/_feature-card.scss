@@ -5,8 +5,16 @@
   font-size: 1.5rem;
   height: 33rem;
   padding: 2.5rem;
-  text-align: center;
   transition: transform 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
 
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
@@ -17,5 +25,9 @@
 
     height: 6rem;
     width: 6rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 }
