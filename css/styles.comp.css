@@ -271,10 +271,10 @@ body {
         .card__img--1 {
           background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/03-lg.png); } }
     .card__img--2 {
-      background-image: linear-gradient(to right bottom, #ff9966, #ff5e62), url(../img/08.png); }
+      background-image: linear-gradient(to right bottom, #ff9966, #ff5e62), url(../img/10.png); }
       @media (min-resolution: 192dpi) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 192dpi) and (min-width: 1200px) {
         .card__img--2 {
-          background-image: linear-gradient(to right bottom, #ff9966, #ff5e62), url(../img/08-lg.png); } }
+          background-image: linear-gradient(to right bottom, #ff9966, #ff5e62), url(../img/10-lg.png); } }
     .card__img--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/09.png); }
       @media (min-resolution: 192dpi) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 192dpi) and (min-width: 1200px) {
