@@ -239,7 +239,7 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     font-size: 2rem;
     overflow: hidden;
-    transition: all .8s ease;
+    transition: all 0.8s ease;
     height: 56rem;
     width: 100%;
     position: absolute;
@@ -329,6 +329,8 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+    .card__price-value span {
+      font-size: 3rem; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       background-color: #ffffff;
@@ -358,7 +360,9 @@ body {
       .card__price {
         margin-bottom: 3rem; }
       .card__price-value {
-        font-size: 6rem; } }
+        font-size: 6rem; }
+        .card__price-value span {
+          font-size: 3rem; } }
 
 .composition {
   position: relative; }
