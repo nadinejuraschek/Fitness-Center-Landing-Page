@@ -14,18 +14,17 @@
     "type": "git",
     "url": "git+https://github.com/nadinejuraschek/Vereinshomepage.git"
   },
-  "author": "Nadine Juraschek",
+  "author": "Nadine Pesso",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nadinejuraschek/Vereinshomepage/issues"
   },
   "homepage": "https://github.com/nadinejuraschek/Vereinshomepage#readme",
   "devDependencies": {
-    "autoprefixer": "^10.1.0",
-    "node-sass": "^5.0.0",
+    "autoprefixer": "^10.4.12",
+    "node-sass": "^7.0.3",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.1",
-    "postcss-cli": "^8.3.1"
-  },
-  "dependencies": {}
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0"
+  }
 }
