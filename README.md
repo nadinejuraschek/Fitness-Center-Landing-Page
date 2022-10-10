@@ -1,5 +1,5 @@
 # Fitness Center Landing Page
-Fully responsive landing page for a fictional fitness center built with Sass and pure JavaScript. View the full project [here](https://nadinejuraschek.github.io/Vereinshomepage/).
+Fully responsive landing page for a fictional fitness center built with Sass and pure JavaScript. View the full project [here](https://nadinejuraschek.github.io/Fitness-Center-Landing-Page/).
 
 ## Technologies
 * Sass
